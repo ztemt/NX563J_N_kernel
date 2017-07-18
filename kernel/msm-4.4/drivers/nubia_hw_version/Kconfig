@@ -1,0 +1,42 @@
+################nubia hw_version config start################
+config NUBIA_HW_VERSION
+	bool "NUBIA HW VERSION"
+	default y
+	help
+	  NUBIA HW VERSION
+
+config NUBIA_HW_VERSION_DEBUG
+	bool "NUBIA HW VERSION DEBUG"
+	depends on NUBIA_HW_VERSION
+	default n
+	help
+		NUBIA HW VERSION DEBUG
+
+config NUBIA_HW_VER_BY_ADC
+	bool "NUBIA HW VER BY ADC"
+	depends on NUBIA_HW_VERSION
+	default n
+	help
+		NUBIA HW VER BY ADC
+
+config NUBIA_HW_CONFIG_BY_GPIO
+	bool "NUBIA HW CONFIG BY GPIO"
+	depends on NUBIA_HW_VERSION
+	default n
+	help
+		NUBIA HW CONFIG BY GPIO
+
+config NUBIA_HW_GPIO_BY_PM
+	bool "NUBIA_HW_GPIO_BY_PM"
+	depends on NUBIA_HW_VERSION
+	default n
+	help
+		NUBIA HW GPIO BY PM
+
+config NUBIA_HW_CPU_SERIAL_NUM
+	bool "NUBIA HW CPU SERIAL NUM"
+	depends on NUBIA_HW_VERSION
+	default y
+	help
+	  NUBIA HW CPU SERIAL NUM
+

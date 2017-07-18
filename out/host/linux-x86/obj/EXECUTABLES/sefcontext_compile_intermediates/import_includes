@@ -1,0 +1,4 @@
+-I external/libcxx/include
+-I external/libcxxabi/include
+-I external/libselinux/include
+-I external/pcre

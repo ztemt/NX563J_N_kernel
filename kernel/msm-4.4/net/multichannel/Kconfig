@@ -1,0 +1,16 @@
+#
+# wan devices configuration
+#
+
+
+config MULTI_CHANNEL
+	tristate "support multip channel of lte+wifi+wifi"
+    default m
+	help
+	  if you use nubia dual lte and dual wifi route.
+
+config MULTI_CHANNEL_ROUTER
+	tristate "support multip channel of lte+wifi+wifi"
+    default y
+	help
+	  if you use nubia dual lte and dual wifi route.

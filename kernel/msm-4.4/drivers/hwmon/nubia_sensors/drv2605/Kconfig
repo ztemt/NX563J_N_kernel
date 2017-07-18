@@ -1,0 +1,5 @@
+config DRV2605
+	tristate "ti 2605 driver"
+	default n
+	help
+	  This module is ti 2605 driver.

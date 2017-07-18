@@ -1,0 +1,26 @@
+
+# nubia add for flycow
+service flycow /system/bin/flycow
+    class main
+    socket flycow stream 666 system system
+#nubia END
+#Nubia add start, for config
+service nubiaconfigd /system/bin/nubiaconfigd
+    class core
+    socket nubiaconfigd stream 666 system system
+#Nubia add end
+
+#Nubia add for freezer
+service freezerd /system/bin/freezerd
+    class main
+    user root
+    group root
+    
+    start freezerd
+#Nubia add end
+
+service cpusetd /system/bin/cpusetd
+    class main
+    user root
+    group root
+import init.cmx.rc

@@ -1,0 +1,5 @@
+#include "nubia-dsi-panel-jdi-r63452-1080p-5p5-cmd.dtsi"
+#include "nubia-dsi-panel-jdi-r63452-1080p-5p5-video.dtsi"
+#include "nubia-dsi-panel-sharp-r63417-1080p-5p5-cmd.dtsi"
+#include "nubia-dsi-panel-sharp-r63417-1080p-5p5-video.dtsi"
+

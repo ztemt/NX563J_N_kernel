@@ -1,0 +1,20 @@
+--- drivers/input/touchscreen/nubia_synaptics_dsx/synaptics_dsx_core.c
++++ drivers/input/touchscreen/nubia_synaptics_dsx/synaptics_dsx_core.c
+@@ -1480,6 +1483,9 @@
+ 				input_report_key(rmi4_data->input_dev, KEY_PALM_LOCK, 0);
+ 				input_sync(rmi4_data->input_dev);
+ */
++
++				nubia_force_cal();
++				usleep_range(100000,100000);
+ 				input_report_key(rmi4_data->input_dev, KEY_F9, 1);
+ 				input_sync(rmi4_data->input_dev);
+ 				input_report_key(rmi4_data->input_dev, KEY_F9, 0);
+@@ -4925,6 +4931,7 @@
+ }
+ #endif
+ 
++
+ static void reset_work_func(struct work_struct *work)
+ {
+ 	int retval = -1;
